@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191c32;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.brand {
+  margin-top: -7px;
+}
+.brand span {
+  color: aqua;
+}
+.menu {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+}
+.menu  li {
+  list-style: none;
+
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu li:hover a{
+  background-color: #bbfc02;
+  color: #191c32;
+}
+
+.menu .active {
+  color: aqua;
+ 
+}
+
+
+.menu li a:hover {
+  color: #66E7C8;
+}
+
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.info-content span {
+  color: aqua;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(203, 231, 102, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(255, 2, 2, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+
+
+.main img {
+  width: 350px;
+  height: 400px;
+  z-index: 1;
+}
+
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
